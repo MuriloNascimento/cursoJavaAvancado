@@ -1,25 +1,30 @@
 package gui;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Janela extends JFrame{
-
+public class Janela extends JFrame implements ActionListener{
+	
+	JButton botao = new JButton("Clique Aqui");
+	
 	public Janela() {
 		
-		super("Minha Janela");
+		super("Eventos");
 		
-		Container c = getContentPane();
-		c.setLayout(new FlowLayout());
-		c.add(new JButton("1"));
-		c.add(new JButton("2"));
-		c.add(new JButton("3"));
+		botao.addActionListener(this);
+		getContentPane().add(botao);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300,300);
 		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		botao.setText("foi clicado");
+		
 	}
 }
