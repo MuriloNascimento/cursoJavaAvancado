@@ -2,6 +2,16 @@ package colecao;
 
 import java.util.*;
 
+/**
+ * Esta é a aula sobre <b>collectios</b>
+ * Collections, são listas ordenadas ou não, de valores quaisquer
+ * 
+ * 
+ * @author Murilo Nascimento Schitz
+ * @version 1.0
+ * @since 1.0
+ */
+
 public class Colecao {
 
 	public static void main(String[] args) {

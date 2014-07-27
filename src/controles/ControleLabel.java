@@ -8,6 +8,7 @@ import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+@SuppressWarnings("serial")
 public class ControleLabel extends JFrame {
 	
 	public ControleLabel(){
