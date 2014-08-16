@@ -11,8 +11,8 @@ public class AcessoBanco {
 	public static void main(String[] args) throws SQLException {
 		
 		String sql = "select * from pessoa";
-		
 		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		
 		Connection con = DriverManager.getConnection(url, "murilo", "niane");
 		PreparedStatement stm = con.prepareStatement(sql);
 		ResultSet rs = stm.executeQuery();
